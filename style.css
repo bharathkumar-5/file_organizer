@@ -1,0 +1,116 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* display: flex;
+    justify-content: center;
+    align-items: flex-start; */
+    height: 100vh;
+    /* background-color: #f4f4f4; */
+    background-color: #fff;
+}
+header{
+    text-align: center;
+    padding: 30px;
+    font-size:larger ;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #f4f4f4;
+}
+
+#folder-container{
+    width: 300px;
+    background: #fff;
+    border-right: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+.folder{
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+}
+.folder:hover{
+    background: #eee;
+}
+#file-list-container{
+    flex-grow: 1;
+    padding: 20px;
+}
+#search-input{
+    width: 150px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+#sort-toggle{
+    margin-bottom: 10px;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+li{
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+li:last-child{
+    border-bottom: none;
+}
+ @media (max-width: 1200px) { 
+    body{
+        flex-direction: column;
+        align-items: center;
+    }
+    #folder-container{
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+    #file-list-container{
+        width: 100%;
+        padding: 10px;
+    }
+ }
+
+ @media (max-width: 768px) { 
+    body{
+        font-size: 14px;
+    }
+    #folder-container{
+        width: 100%;
+        border-right: none;
+        border-bottom: none;
+    }
+    #file-list-container{
+        width: 100%;
+        padding: 5px;
+    }
+    #search-input{
+        padding: 8px;
+        margin-bottom: 8px;
+    }
+    #sort-toggle{
+        margin-bottom: 8px;
+    }
+ }
+ @media (max-width: 768px) { 
+    body{
+        font-size: 12px;
+    }
+    .folder{
+        font-size: 12px;
+        padding: 8px;
+    }
+    li{
+        padding: 6px;
+    }
+ }
