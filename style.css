@@ -2,38 +2,42 @@ body{
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    /* display: flex;
-    justify-content: center;
-    align-items: flex-start; */
-    height: 100vh;
-    /* background-color: #f4f4f4; */
-    background-color: #fff;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    max-width: 90%;
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
 }
 header{
     text-align: center;
     padding: 30px;
     font-size:larger ;
     font-weight: bold;
-    font-family: 'Courier New', Courier, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .container{
+    margin-left: 10%;
+    max-width: 80%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    background-color: #f4f4f4;
+    background-image: linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%);
 }
 
 #folder-container{
     width: 300px;
-    background: #fff;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+ background-blend-mode: multiply,multiply;
     border-right: 1px solid #ddd;
+    border-radius: 5px;
     padding: 10px;
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
 }
 .folder{
+    margin-top: 10px;
     cursor: pointer;
+    border-radius: 5px;
     padding: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     border: 1px solid #ddd;
     background: #f9f9f9;
 }
@@ -42,10 +46,12 @@ header{
 }
 #file-list-container{
     flex-grow: 1;
-    padding: 20px;
+    padding: 5px;
+    max-width: 70%;
+    margin-top: 20px;
 }
 #search-input{
-    width: 150px;
+    width: 200px;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ddd;
@@ -53,6 +59,17 @@ header{
 }
 #sort-toggle{
     margin-bottom: 10px;
+    margin-left: 15px;
+    border-radius: 5px;
+    padding: 6px;
+    background-color: white;
+}
+#sort-toggle:hover{
+    background-color: #eee;
+    color: black;
+}
+#sort-toggle:active{
+    background-color: green;
 }
 ul{
     list-style-type: none;
@@ -61,6 +78,7 @@ ul{
 li{
     padding: 8px;
     border-bottom: 1px solid #ddd;
+    margin: 12px;
 }
 li:last-child{
     border-bottom: none;
